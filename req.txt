@@ -1,0 +1,8 @@
+pandas_datareader==0.10.0
+matplotlib
+pandas
+datetime
+urllib
+numpy
+tensorflow
+scikit-learn
