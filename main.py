@@ -44,9 +44,9 @@ class MultiLSTMModel:
     def build_model(self, input_shape):
         # Build a single LSTM model
         model = Sequential()
-        model.add(LSTM(45, return_sequences=True, input_shape=input_shape))
+        model.add(LSTM(30, return_sequences=True, input_shape=input_shape))
         model.add(Dropout(0.2))
-        model.add(LSTM(45, return_sequences=False))
+        model.add(LSTM(40, return_sequences=False))
         model.add(Dropout(0.2))
         model.add(Dense(25))
         model.add(Dense(1))
